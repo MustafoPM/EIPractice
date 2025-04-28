@@ -1,0 +1,168 @@
+.main {
+  background: linear-gradient(#ffca42, #5df2e9);
+  height: 1150px;
+  display: flex;
+  justify-content: space-between; /* Разносит элементы по краям */
+  align-items: center; /* Выравнивает элементы по вертикали */
+  gap: 50px;
+  padding-right: 0px;
+}  
+  
+h1 {
+    font-size: 2em;
+    /* margin: -0.33em 0; */
+  
+    /* margin-top: 242px; */
+}
+  
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fefefe;
+    filter: drop-shadow(15px 15px 15px #000);
+}
+  
+.title span {
+    color: #EAEAEA; /* Можно задать другой оттенок */
+}
+  
+.subtitle {
+    font-size: 24px;
+    font-weight: normal;
+    color: #fefefe;
+    filter: drop-shadow(15px 15px 15px #E0FFAC);
+}
+  
+.mainTitle-left{
+    margin-top: 55px;
+    padding: 0px 99px;
+    
+}
+  
+.mainButton {
+    border-radius: 25px;
+    height: 65px !important;
+    width: 289px !important;
+    font-size: 24px;
+    color: #4776A0;
+    margin-top: 150px;
+    background-color: #fefefe;
+    border: 1px solid #4776A0; /* Добавьте цвет границы */
+    display: inline-flex; /* Для лучшего выравнивания текста */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Убрать подчеркивание ссылки */
+}
+
+.mainTitle-left {
+    flex: 1;
+}
+  
+.mainTitle-right {
+    position: relative;
+    width: 540px;
+    height: 629px;
+}
+  
+.mainTitle-right img {
+    position: absolute; /* Абсолютное позиционирование */
+    width: 100%; /* Подстройка под контейнер */
+    height: auto;
+}
+  
+.mainTitle-right img:first-child {
+    z-index: 1; /* Нижний слой */
+}
+  
+.mainTitle-right img:last-child {
+    z-index: 2; /* Верхний слой */
+}
+
+/*  */
+
+.startGame {
+    
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: -100px;
+    gap: 55px;
+    
+}
+
+a{  text-decoration: none;}
+
+.victorina {
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.startGameButton{
+    color: #fefefe;
+    border: 10px;
+    width: 304px;
+    height: 61px;
+    border-radius: 17px;
+    text-align: center;
+    background-color: #4775A1;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+    filter: drop-shadow(1px 1px 1px black);
+}
+
+.main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+}
+.mainTitle-left { grid-column: 1; grid-row: 1; }
+.mainTitle-right { grid-column: 2; grid-row: 1; }
+.results-container { grid-column: 1/-1; grid-row: 2; }  
+
+/**/
+.mainTitle-right {
+    position: absolute;
+    right: 0;
+    top: 20px; /* Или значение по вашему layoutу */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+  
+.mainTitle-right img {
+    display: block;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+  
+/* Если есть проблема с пробелами между тегами */
+.mainTitle-right {
+    font-size: 0; /* Убирает пробелы между inline/inline-block элементами */
+}
+  
+
+
+
+/**/
+.results-container{
+    width: 500px;
+}
+
+/**/
+
+.TextGame{
+    margin-top: -50px !important;
+}
+
+.startGameButton{
+    margin-top: 20px;
+}

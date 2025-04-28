@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EIPractice</title>
+    <link rel="stylesheet" href="styles/index.css">
+</head>
+<body  style="user-select: none;">  
+    <div class="header">
+        <p class="logo" style="user-select: none;">
+            <span class="ei">EI</span><span class="practice">Practice</span>
+        </p>
+        
+        <div class="header-right">
+            <button class="header-button-first" id="buttonRegister" type="button">Регистрация</button>
+            <button class="header-button-second" id="buttonSignIn" type="button">Войти</button>
+            <a href="./pages/profile/userProfile.html">
+                <img class="profilePhoto" src="./img/🦆 icon _person_.svg" alt="profilePhoto" title="Профиль">
+            </a>
+        </div>
+    </div>
+    
+    <main class="main">
+        <div class="mainTitle-left">
+            <h1 class="title">Обучение Английскому</h1>
+            <h1 class="subtitle">по играм</h1>
+            <Button class="glow-on-hover" title="Начать игру" type="button" id="btnScroll">Начать</Button>
+            
+        </div>
+        
+        
+        <div class="mainTitle-right">
+            <img src="img/Ellipse 8.svg" alt="photo" class="Ellipse">
+            <img src="img/Group 32.svg" alt="photo">
+        </div>
+        
+        <div class="results-container">
+            <h2 class="results-title">Результаты</h2>
+            <div class="circle-progress" data-progress="0">
+                <span class="progress-text">0%</span>
+            </div>
+            <div class="results-labels">
+                <div class="result-item">
+                    <span class="result-label">Словарь</span>
+                    <span class="result-percent">0%</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Викторина</span>
+                    <span class="result-percent">0%</span>
+                </div>
+                <div class="result-item">
+                    <span class="result-label">Слушай и повторяй</span>
+                    <span class="result-percent">0%</span>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    
+    <section class="Games">
+        <p class="TextGame" id="game">
+            ИГРЫ
+        </p>
+        
+        
+    </section>
+    
+    <section class="GamesList">
+        <div class="startGame">
+            
+            <div class="victorina">
+                <img src="./img/gamesImageMain/firstImage.png" alt="Викторина">
+                <a href="./pages/vocabularyGame.html"   class="startGameButton">Викторина</a>
+            </div>
+            
+            <div class="victorina">
+                <img src="./img/gamesImageMain/slovar.png" alt="Словарь">
+                <a href="./pages/wordGame.html"   class="startGameButton">Словарь</a>
+            </div>
+            
+            <div class="victorina">
+                <img src="./img/gamesImageMain/3img.png" alt="Слушай и повторяй">
+                <a href="./pages/listening.html"   class="startGameButton">Слушай и повторяй</a>
+            </div>
+            
+            <div class="victorina">
+                <img src="./img/gamesImageMain/poiskslov.png" alt="Поиск слов (бета)">
+                <a href="./pages/wordGame.html  "   class="startGameButton">Поиск слов (бета)</a>
+            </div>
+            
+        </div>
+    </section>
+    
+    
+    <a href="pages/vocabularyGame"></a>
+    
+    <footer class="footer">
+        
+        <div class="footerItems">
+            <div class="socialGroup">
+                <div class="socialGrouplist">
+                    <a href="https://t.me/+0ncDXf6dPZBiNDMy">
+                        <img src="./img/icon/telegramm.png" alt="telegramm">
+                    </a>
+                    
+                    <a href="#">
+                        <img src="./img/icon/Discord.png" alt="Discord">
+                    </a>
+                    
+                    <a href="https://github.com/MustafoPM">
+                        <img src="./img/icon/GitHub.png" alt="GitHub">
+                    </a>
+                </div>
+            </div>
+            
+            <div class="support">
+                <p>
+                    <span style="margin-right: 20px; user-select: none;">© 2025 EIPractice</span>
+                    Свяжитесь с нами:
+                    <span type="email" class="email" id="copyText" title="Нажмите чтобы скопировать">mustafodev@gmail.com</span>
+                    
+                    <div id="notification">Текст скопирован!</div>
+                </p>
+            </div>
+        </div>
+    </footer>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="scripts/main.js"></script>
+        
+</body>
+</html>

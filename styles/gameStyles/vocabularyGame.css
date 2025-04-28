@@ -1,0 +1,328 @@
+body{
+    background: linear-gradient(#4A8EC0, #508F96);
+    background-repeat: no-repeat;
+    
+    height: 100%;
+}
+
+/**/
+
+.column {
+    display: inline-block;
+    width: 310%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.word {
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    padding: 15px;
+    font-size: 18px;
+    border: 2px solid #333; /* Чёткие границы */
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: #f8f8f8; /* Светлый фон */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.word:hover {
+    background-color: #e0e0e0;
+    transform: scale(1.05);
+}
+
+.selected {
+    background-color: #ffcc00 !important; /* Выделенный цвет */
+}
+
+.correct {
+    background-color: #4CAF50 !important; /* Зелёный при правильном ответе */
+    color: white;
+    cursor: default;
+    pointer-events: none;
+}
+
+.incorrect {
+    background-color: #ff4d4d !important; /* Красный при ошибке */
+}
+
+
+/**/
+
+
+.mainBlockGame{
+    height: 500px;
+    width: 743.2px;
+    background-color: #fefefe;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    border-radius: 6px 6px 0px 0px;
+}
+
+.mainButtons {
+    margin-top: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 47px;
+    justify-content: center;
+    /* margin-left: 10px; */
+    padding: 0;
+    margin: 225px 0px 0px 0px;
+}
+
+.mainBtn{
+    width: 206px;
+    height: 74px;
+    border-radius: 25px;
+    border: 0px;
+    gap: 50px;
+    
+    color: #000000;
+    font-size: 20px;
+}
+
+#mainBtn1{
+    background-color: #FFCCAC;
+}
+
+#mainBtn2{
+    background-color: #E0FFAC;
+}
+
+
+.mainBtnLinks {
+    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+    display: inline-block; /* Чтобы размер контейнера соответствовал содержимому */
+}
+
+.mainBtnLinks img:first-child {
+    position: relative; /* Эллипс остается на фоне */
+    z-index: 1;
+}
+
+.mainBtnLinks img:last-child {
+    position: absolute; /* Иконка будет поверх эллипса */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Центрирование */
+    z-index: 2; /* Иконка выше эллипса */
+    width: 50%; /* Настрой ширину по желанию */
+    height: auto;
+}
+
+.mainHeader {
+    background-color: #387B83;
+    padding: 0px 20px 0px 20px;
+    margin: 0px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    height: 50px;
+    border-radius: 6px 6px 0px 0px;
+    
+    font-size: 24px;
+}
+
+/**/
+
+
+.progress-bar {
+    flex-grow: 1;
+    height: 10px;
+    background: #ccc;
+    margin: 0 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 10%;
+    height: 100%;
+    background: #b4ec51;
+}
+
+.score {
+    font-size: 14px;
+}
+
+.game-board {
+    margin-top: 10% !important;
+}
+
+.word-pair {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.word {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.word:hover {
+    background: #ddd;
+}
+
+/*level-container*/
+
+.level-container {
+    margin: -10px 0;
+    background: #2c6e8f;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+}
+
+#level-selector button {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 14px;
+    margin: 2px;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+#level-selector button:hover {
+    color: #b4ec51;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 400px;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #2c6e8f;
+    color: white;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    flex-grow: 1;
+    height: 10px;
+    background: #ccc;
+    margin: 0 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    width: 10%;
+    height: 100%;
+    background: #b4ec51;
+}
+
+.game-board {
+    margin-top: 20px;
+    width: 0 auto;
+}
+
+.word-pair {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.word {
+    width: 45%;
+    padding: 10px;
+    border: none;
+    background: #f0f0f0;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+
+/**/
+
+.highlighted {
+    background-color: yellow; /* Подсветка */
+}
+.word-pair {
+    margin: 10px;
+}
+button {
+    margin: 5px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+
+/**/
+@media (max-width: 500px) {
+    
+    .header{
+        width: 100%;
+        margin: 0;
+        padding: 0px 0px 4px;
+        margin-top: 10px;
+    }
+    
+    .mainBlockGame {
+      width: 320px !important;
+    }
+    
+    body{
+        width: 100% !important;
+        height: 100% !important;
+        margin: 0;
+        padding: 0;
+    }
+    
+}
+
+/**/
+.progress {
+    width: 44%;
+    height: 50%;
+    background: #b4ec51;
+}
+
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-gap: 115px !important;
+    justify-items: center;
+}
+
+.mainButtons {
+    margin-top: 600px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    column-gap: 47px;
+    justify-content: center;
+    /* margin-left: 10px; */
+    padding: 0;
+    margin: 4px 0px 0px 0px;
+}
+
+.mainItems {
+    display: flex;
+    justify-content: center;
+}

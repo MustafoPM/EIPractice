@@ -1,0 +1,231 @@
+@import './normalize.css';
+@import './mainPageStyle/header.css';
+@import './mainPageStyle/main.css';
+@import './animation/buttonAnimation.css';
+@import './mainPageStyle/footer.css';
+
+body{
+  background:#fefefe;
+}
+
+/* Button */
+button{
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05);
+  background-color: #45a049;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+a{
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+a:hover {
+  transform: scale(1.05);
+  background-color: #45a049;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.Games {
+  height: 50vh; /* Увеличил высоту, чтобы SVG нормально вписался */
+  background: linear-gradient(#387B83, #4B8FC0);
+  position: relative;
+  padding: 1px;
+  
+  border-radius: 0px 0px 460px 460px;
+}
+
+.TextGame {
+  text-align: center;
+  font-size: 32px;
+  color: #F5F5F5;
+  margin-top: 279px;
+}
+
+
+/**/
+
+@media (max-width: 500px) {
+  .mainBlockGame {
+    width: 410px !important;
+    height: 100%;
+  }
+  .game-board{
+    height: 400px !important;
+    width: 500px !important;
+  }
+}
+
+
+/**/
+
+body {
+  margin: 0;
+  padding: 0;
+  !important width: 100%;
+  overflow-x: hidden;
+  perspective: 1000px; /* Добавляем перспективу для 3D-эффекта */
+}
+
+main {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  transform-style: preserve-3d; /* Сохраняем 3D-пространство */
+  transition: transform 1s ease-in-out;
+}
+
+.Games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #333;
+  color: white;
+  transform-style: preserve-3d;
+  transform-origin: top center;
+  transform: rotateX(-90deg); /* Начальное положение секции Games */
+  transition: transform 1s ease-in-out;
+}
+
+/* Анимация перехода */
+body.scroll-down main {
+  transform: rotateX(90deg); /* Поворачиваем main */
+}
+
+body.scroll-down .Games {
+  transform: rotateX(0deg); /* Возвращаем Games в исходное положение */
+}
+
+
+/* результаты */
+
+/* Основные стили для контейнера */
+.results-container {
+  font-family: Arial, sans-serif;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Заголовок */
+.results-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Большой круглый прогресс-бар */
+.circle-progress {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: conic-gradient(#007bff 0%, #e0e0e0 0%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Текст внутри круга */
+.progress-text {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Контейнер для меток (Словарь, Викторина и т.д.) */
+.results-labels {
+  text-align: left;
+  margin-top: 20px;
+}
+
+/* Элемент результата */
+.result-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #555;
+}
+
+/* Процент для каждого элемента */
+.result-percent {
+  font-weight: bold;
+  color: #333;
+}
+
+/**/
+.glow-on-hover {
+  width: 220px;
+  height: 50px;
+  border: none;
+  outline: none;
+  color: black;
+  background: #fefefe;
+  cursor: pointer;
+  position: relative;
+  z-index: 0;
+  border-radius: 10px;
+  margin-top: 80px;
+}
+
+.glow-on-hover:before {
+  content: '';
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+.glow-on-hover:active {
+  color: #fefefe;
+}
+
+.glow-on-hover:active:after {
+  background: transparent;
+}
+
+.glow-on-hover:hover:before {
+  opacity: 1;
+}
+
+.glow-on-hover:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fefefe;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}

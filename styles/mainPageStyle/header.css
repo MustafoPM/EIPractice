@@ -1,0 +1,79 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fefefe;
+    height: 80px;
+    margin: 0px 58px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 28px; /* Отступы между кнопками */
+}
+
+.header-button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.header-button:hover {
+    background-color: #0056b3;
+}
+
+.header a img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.logo {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.ei {
+    color: #23435A; /* Темно-синий цвет */
+}
+
+.practice {
+    color: #508F96; /* Бирюзовый цвет */
+}
+
+
+.header-button-second {
+    background-color: #E0FFAC;
+    border: 0px;
+    width: 93px;
+    height: 47px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.header-button-first {
+    background-color: #FFCCAC;
+    border: 0px;
+    width: 129px;
+    height: 47px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.Ellipse{
+ 
+ 
+    margin-left: 0px;
+    
+}
+

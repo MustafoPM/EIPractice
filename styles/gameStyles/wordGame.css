@@ -1,0 +1,24 @@
+#game-board {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Измените 4 на нужное количество колонок */
+    grid-gap: 5px;
+}
+  
+button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+  
+button.correct {
+    background-color: lightgreen;
+}
+  
+button.incorrect {
+    background-color: lightcoral;
+}
+.mainBlockGame {
+    height: 563px !important;
+}
+
