@@ -1,15 +1,4 @@
-// Animation
-document.addEventListener('scroll', function() {
-    const main = document.querySelector('main');
-    const games = document.querySelector('.Games');
-    const mainHeight = main.offsetHeight;
 
-    if (window.scrollY > mainHeight / 1.5) {
-        document.body.classList.add('scroll-down');
-    } else {
-        document.body.classList.remove('scroll-down');
-    }
-});
 
 // Функция для обновления прогресса
 function updateProgress(circle, progress) {

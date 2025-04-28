@@ -6,8 +6,8 @@
 
 body{
   background:#fefefe;
-  height: 100%;
-  width: 100%;
+  height: 100% auto !important;
+  width: 100% !important;
 }
 
 /* Button */
@@ -37,7 +37,6 @@ a:hover {
 
 .Games {
   height: 50vh; /* Увеличил высоту, чтобы SVG нормально вписался */
-  background: linear-gradient(#387B83, #4B8FC0);
   position: relative;
   padding: 1px;
   
@@ -78,22 +77,11 @@ main {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #333;
-  color: white;
-  transform-style: preserve-3d;
-  transform-origin: top center;
-  transform: rotateX(-90deg); /* Начальное положение секции Games */
-  transition: transform 1s ease-in-out;
+  background-color: #5df2e9 !important;
+  color: black;
 }
 
-/* Анимация перехода */
-body.scroll-down main {
-  transform: rotateX(90deg); /* Поворачиваем main */
-}
 
-body.scroll-down .Games {
-  transform: rotateX(0deg); /* Возвращаем Games в исходное положение */
-}
 
 
 /* результаты */
@@ -160,7 +148,7 @@ body.scroll-down .Games {
   color: #333;
 }
 
-/**/
+/* Кнопка */
 .glow-on-hover {
   width: 220px;
   height: 50px;
