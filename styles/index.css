@@ -6,6 +6,8 @@
 
 body{
   background:#fefefe;
+  height: 100%;
+  width: 100%;
 }
 
 /* Button */
@@ -52,24 +54,12 @@ a:hover {
 
 /**/
 
-@media (max-width: 500px) {
-  .mainBlockGame {
-    width: 410px !important;
-    height: 100%;
-  }
-  .game-board{
-    height: 400px !important;
-    width: 500px !important;
-  }
-}
-
 
 /**/
 
 body {
   margin: 0;
   padding: 0;
-  !important width: 100%;
   overflow-x: hidden;
   perspective: 1000px; /* Добавляем перспективу для 3D-эффекта */
 }
@@ -118,6 +108,8 @@ body.scroll-down .Games {
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
+  margin-top: 350px;
+  margin-bottom: 260px;
 }
 
 /* Заголовок */

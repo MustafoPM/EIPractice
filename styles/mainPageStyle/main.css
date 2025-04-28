@@ -1,6 +1,7 @@
 .main {
   background: linear-gradient(#ffca42, #5df2e9);
-  height: 1150px;
+  height: 100% !important;
+  width: 100% !important;
   display: flex;
   justify-content: space-between; /* Разносит элементы по краям */
   align-items: center; /* Выравнивает элементы по вертикали */
