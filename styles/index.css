@@ -59,8 +59,7 @@ a:hover {
 body {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  perspective: 1000px; /* Добавляем перспективу для 3D-эффекта */
+  overflow: auto;
 }
 
 main {
@@ -208,4 +207,62 @@ main {
   0% { background-position: 0 0; }
   50% { background-position: 400% 0; }
   100% { background-position: 0 0; }
+}
+
+/**/
+
+/* если экран меньше 601 то */
+@media (max-width: 601px) {
+  /* header */
+  .header {height: 60px; margin: 0px 10px;}
+  .header-right {gap: 12px;}
+  .logo {font-size: 20px;}
+  .header-button-first {width: 90px; height: 35px; font-size: 14px;}
+  .header-button-second {width: 90px; height: 35px; font-size: 14px;}
+  
+  /* main */
+  .main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {font-size: 16px; color: white;}
+  .subtitle {font-size: 14px; color: white;}
+  .glow-on-hover {height: 33px;}
+  .mainTitle-right {width: 400px; z-index: -1; margin: -6px 77px; filter: blur(1px);}
+  
+  .Ellipse {display: none !important;}
+  
+  .parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .mainTitle-left {margin: 120px 11px 5px 39px; z-index: 2;}
+  
+  /* results-container */
+  .results-container {width: 360px;
+    height: 360px;
+    margin: 30% 18% 20% 18%;
+  }
+  
+  /* Games */
+  .startGame {gap: 266px; display: flex; flex-direction: column;}
+  .victorina {width: 100px; height: 100px;}
+  .startGameButton {
+    font-size: 24px; color: #fefefe;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 6px 0px 6px 0px;
+    z-index: 0;
+  }
+  .GamesList {margin: 123px; padding-bottom: 33px;}
+  
+  /* Footer */
+  .footer {
+    height: 110px;
+  }
+  .socialGroup {width: 422px;}
+  .socialGrouplist {gap: 79px;}
 }
